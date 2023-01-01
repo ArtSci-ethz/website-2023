@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ArrowRight from '$lib/components/ArrowRight.svelte';
   import { getContext } from 'svelte';
   import { key } from '$lib/components/Header.ts';
   import type { HeaderContext } from '$lib/components/Header.ts';
@@ -112,7 +113,7 @@
   <div class="mt-8 sm:flex sm:flex-row sm:items-center">
     <h2 class="font-bold text-3xl sm:font-normal mb-4 sm:m-0">Get involved</h2>
     <div class="hidden sm:block sm:flex-1 px-8">
-      <div class="gg-arrow-long-right" />
+      <ArrowRight />
     </div>
     <a href="/participate"><button>Participate</button></a>
     <a href="/join-and-give"><button>Sponsor</button></a>
@@ -141,32 +142,5 @@
 <style lang="postcss">
   button {
     @apply border-2 border-gray-700 p-2 mx-2;
-  }
-
-  /* Thanks to https://css.gg/arrow-long-right */
-  .gg-arrow-long-right {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs, 1));
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    box-shadow: inset 0 0 0 2px;
-    width: 100%;
-    height: 6px;
-  }
-
-  .gg-arrow-long-right::after {
-    content: '';
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid;
-    border-right: 2px solid;
-    transform: rotate(45deg);
-    right: 0;
-    bottom: -2px;
   }
 </style>
