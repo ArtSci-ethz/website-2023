@@ -24,7 +24,9 @@
 <!-- Header -->
 <Header backgroundImage={headerImage} text={headerText} />
 
-<slot />
+<div class="max-w-[1500px] mx-auto">
+  <slot />
+</div>
 
 <Footer />
 
