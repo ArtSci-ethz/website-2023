@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .common-width {
+    @apply 2xl:max-w-screen-2xl mx-auto;
+  }
+}

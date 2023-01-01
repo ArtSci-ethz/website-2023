@@ -24,7 +24,7 @@
 <!-- Header -->
 <Header backgroundImage={headerImage} text={headerText} />
 
-<div class="max-w-[1500px] mx-auto">
+<div class="common-width">
   <slot />
 </div>
 
