@@ -4,19 +4,17 @@
   export let backgroundImage: string | undefined;
 </script>
 
-<header class="w-full">
+<header class="w-full relative">
+  <!-- Background image -->
+  <img class="bg" alt="Background" src={backgroundImage} />
+
   <!-- Logo -->
-  <div>
+  <div class="absolute top-4 left-4">
     <img alt="The ArtSci logo" src={logo} />
   </div>
 
-  <!-- Background image -->
-  <div>
-    <img class="bg" alt="The ArtSci logo" src={backgroundImage} />
-  </div>
-
   <!-- Menu -->
-  <div class="ml-auto">
+  <div class="absolute top-4 right-4">
     <a href="/">Index</a>
     <a href="/about">About</a>
   </div>
@@ -25,6 +23,6 @@
 <style>
   .bg {
     width: 100%;
-    height: 200px;
+    height: 300px;
   }
 </style>
