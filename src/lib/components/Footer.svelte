@@ -1,4 +1,4 @@
-<footer class="text-white mt-4 px-4 py-6 bg-[#6f735f]">
+<footer class="text-white mt-4 py-6 bg-[#6f735f]">
   <div class="common-width flex flex-row">
     <div>© ArtSci 2023</div>
     <div class="flex-1" />

@@ -51,7 +51,7 @@
 </script>
 
 <!-- Section 1 -->
-<div class="m-4">
+<div class="my-4">
   <div class="grid auto-rows-max gap-4 md:grid-cols-2 md:gap-12 lg:grid-cols-4">
     <div>
       To scientists, surfaces are much more than what meets the eye. A surface is a boundary, the

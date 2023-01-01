@@ -4,6 +4,6 @@
 
 @layer utilities {
   .common-width {
-    @apply 2xl:max-w-screen-2xl mx-auto;
+    @apply 2xl:max-w-screen-2xl mx-auto p-4;
   }
 }
