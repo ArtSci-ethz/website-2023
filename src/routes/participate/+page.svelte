@@ -11,6 +11,4 @@
   );
 </script>
 
-<h1>This is the participate page</h1>
-
-<!-- TODO -->
+<div class="text-3xl text-center my-16">Coming soon...</div>
