@@ -16,8 +16,11 @@
 
   <!-- Menu -->
   <div class="absolute top-4 right-4">
-    <a href="/">Index</a>
-    <a href="/about">About</a>
+    <a href="/">About</a>
+    <a href="/visit">Visit</a>
+    <a href="/participate">Participate</a>
+    <a href="/past">Past Exhibitions</a>
+    <a href="/join-and-give">Join & Give</a>
   </div>
 
   <!-- Text -->

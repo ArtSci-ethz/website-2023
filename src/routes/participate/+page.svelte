@@ -2,13 +2,13 @@
   import { getContext } from 'svelte';
   import { key } from '$lib/components/Header.ts';
   import type { HeaderContext } from '$lib/components/Header.ts';
-  import backgroundImage from '$lib/assets/bg-header-about.png';
+  import backgroundImage from '$lib/assets/bg-header-participate.png';
 
   const headerContext: HeaderContext = getContext(key);
   headerContext.setHeaderImage(backgroundImage);
   headerContext.setHeaderText(
-    'An exhibition celebrating the intersection of art and science through the artistic expression(s) and communication of science.'
+    'Submit your artwork to be exhibited in the ArtSci 2023 - Submissions will open soon!'
   );
 </script>
 
-<h1>This is the about page</h1>
+<h1>This is the participate page</h1>

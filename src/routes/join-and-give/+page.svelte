@@ -2,13 +2,16 @@
   import { getContext } from 'svelte';
   import { key } from '$lib/components/Header.ts';
   import type { HeaderContext } from '$lib/components/Header.ts';
-  import backgroundImage from '$lib/assets/bg-header-about.png';
+  import backgroundImage from '$lib/assets/bg-header-join-and-give.png';
 
   const headerContext: HeaderContext = getContext(key);
   headerContext.setHeaderImage(backgroundImage);
   headerContext.setHeaderText(
-    'An exhibition celebrating the intersection of art and science through the artistic expression(s) and communication of science.'
+    'Be part of making our exhibition come to life through partnership and sponsorship with ArtSci 2023.'
   );
 </script>
 
-<h1>This is the about page</h1>
+<h1>This is the Join & Give page</h1>
+
+<p>Go back to the <a href="/">index</a></p>
+.
