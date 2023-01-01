@@ -11,4 +11,8 @@
   );
 </script>
 
-<h1>This is the visit page</h1>
+<h1>Exhibition location</h1>
+
+<div>ETH CHN Universitätstrasse 16, 8006 Zürich</div>
+
+<!-- TODO: Map -->
