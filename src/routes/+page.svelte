@@ -111,8 +111,8 @@
   <!-- Section: Get involved! -->
   <div class="mt-8 sm:flex sm:flex-row sm:items-center">
     <h2 class="font-bold text-3xl sm:font-normal mb-4 sm:m-0">Get involved</h2>
-    <div class="hidden sm:flex-1 px-8 sm:flex">
-      <div class="gg-arrow-long-right flex-1" />
+    <div class="hidden sm:block sm:flex-1 px-8">
+      <div class="gg-arrow-long-right" />
     </div>
     <a href="/participate"><button>Participate</button></a>
     <a href="/join-and-give"><button>Sponsor</button></a>
@@ -152,7 +152,7 @@
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
     box-shadow: inset 0 0 0 2px;
-    width: 24px;
+    width: 100%;
     height: 6px;
   }
 
