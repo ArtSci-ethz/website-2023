@@ -10,7 +10,10 @@
   let showOffcanvas = false;
 </script>
 
-<header class="w-full h-96 py-12 bg-cover" style="background-image: url({backgroundImage});">
+<header
+  class="w-full h-96 py-12 bg-cover bg-left-bottom"
+  style="background-image: url({backgroundImage});"
+>
   <div class="common-width">
     <div class="flex flex-row justify-between">
       <!-- Logo -->
