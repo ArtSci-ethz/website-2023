@@ -125,7 +125,7 @@
       We are a team of multidisciplinary professions in science and art/design to bring ArtSci to
       life.
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 md:w-3/4 md:pl-12 md:ml-auto place-items-stretch border">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 md:w-3/4 md:pl-12 md:ml-auto place-items-stretch">
       {#each members as member}
         <div>
           <img alt={member.name} src={member.picture} />
