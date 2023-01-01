@@ -1,22 +1,28 @@
-<script>
+<script lang="ts">
   import '../app.css';
-  import logo from '$lib/assets/logo.svg';
+  import Header from '$lib/components/Header.svelte';
+  import { setContext } from 'svelte';
+  import { key } from '$lib/components/Header.ts';
+  import type { HeaderContext } from '$lib/components/Header.ts';
+
+  let headerImage: string | undefined = undefined;
+
+  // Context
+  const context: HeaderContext = {
+    setHeaderImage: (newHeaderImage: string) => {
+      headerImage = newHeaderImage;
+    }
+  };
+  setContext(key, context);
 </script>
-<!-- Header for all pages -->
-<div class="flex flex-row m-4 items-center">
-  <!-- Logo -->
-  <img alt="The ArtSci logo" src="{logo}" />
-  <!-- Menu -->
-  <div class="ml-auto">
-    <a href="/">Index</a>
-    <a href="/about">About</a>
-  </div>
-</div>
+
+<!-- Header -->
+<Header backgroundImage={headerImage} />
 
 <slot />
 
 <style lang="postcss">
   a {
-    @apply underline
+    @apply underline;
   }
 </style>
