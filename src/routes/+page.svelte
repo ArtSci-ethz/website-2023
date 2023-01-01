@@ -109,9 +109,9 @@
   </div>
 
   <!-- Section: Get involved! -->
-  <div class="mt-8 md:flex md:flex-row md:items-center">
-    <h2 class="font-bold text-3xl md:font-normal mb-4 md:m-0">Get involved</h2>
-    <div class="hidden md:block md:flex-1 px-8 md:flex">
+  <div class="mt-8 sm:flex sm:flex-row sm:items-center">
+    <h2 class="font-bold text-3xl sm:font-normal mb-4 sm:m-0">Get involved</h2>
+    <div class="hidden sm:flex-1 px-8 sm:flex">
       <div class="gg-arrow-long-right flex-1" />
     </div>
     <a href="/participate"><button>Participate</button></a>
