@@ -4,15 +4,27 @@
   export let href: string;
   export let text: string;
 
-  let isCurrent: boolean;
+  let currentClass: string;
 
   page.subscribe(value => {
-    isCurrent = $page.url.pathname === href;
+    let isCurrent = $page.url.pathname === href;
+    currentClass = isCurrent ? 'active' : 'inactive';
   })
 </script>
 
-{#if isCurrent}
-<a class="text-black font-bold" href={href}>{text}</a>
-{:else}
-<a class="text-slate-600" href={href}>{text}</a>  
-{/if}
+<a href={href}>
+  <div class="inline-block relative">
+    <div class="{currentClass} w-full text-center absolute">{text}</div>
+    <div class="font-bold text-transparent px-1">{text}</div>
+  </div>
+</a>
+
+<style lang="postcss">
+  .active {
+    @apply text-black font-bold;
+  }
+
+  .inactive {
+    @apply text-slate-600;
+  }
+</style>
