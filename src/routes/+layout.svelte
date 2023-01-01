@@ -4,6 +4,7 @@
   import { setContext } from 'svelte';
   import { key } from '$lib/components/Header.ts';
   import type { HeaderContext } from '$lib/components/Header.ts';
+  import Footer from '$lib/components/Footer.svelte';
 
   let headerImage: string | undefined = undefined;
   let headerText: string | undefined = undefined;
@@ -24,6 +25,8 @@
 <Header backgroundImage={headerImage} text={headerText} />
 
 <slot />
+
+<Footer />
 
 <style lang="postcss">
   a {
