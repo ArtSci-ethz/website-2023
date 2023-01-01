@@ -5,26 +5,25 @@
   export let text: string | undefined;
 </script>
 
-<header class="w-full relative">
-  <!-- Background image -->
-  <img class="bg" alt="Background" src={backgroundImage} />
+<header class="w-full h-80 p-4 bg-cover" style="background-image: url({backgroundImage});">
+  <div class="flex flex-row justify-between">
+    <!-- Logo -->
+    <div>
+      <img alt="The ArtSci logo" src={logo} />
+    </div>
 
-  <!-- Logo -->
-  <div class="absolute top-4 left-4">
-    <img alt="The ArtSci logo" src={logo} />
-  </div>
-
-  <!-- Menu -->
-  <div class="absolute top-4 right-4">
-    <a href="/">About</a>
-    <a href="/visit">Visit</a>
-    <a href="/participate">Participate</a>
-    <a href="/past">Past Exhibitions</a>
-    <a href="/join-and-give">Join & Give</a>
+    <!-- Menu -->
+    <div>
+      <a href="/">About</a>
+      <a href="/visit">Visit</a>
+      <a href="/participate">Participate</a>
+      <a href="/past">Past Exhibitions</a>
+      <a href="/join-and-give">Join & Give</a>
+    </div>
   </div>
 
   <!-- Text -->
-  <div class="absolute top-24 right-12 text-xl">
+  <div class="mt-12 float-right mr-4 text-xl">
     {text}
   </div>
 </header>
