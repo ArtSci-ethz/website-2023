@@ -6,6 +6,9 @@
 
   const headerContext: HeaderContext = getContext(key);
   headerContext.setHeaderImage(backgroundImage);
+  headerContext.setHeaderText(
+    'An exhibition celebrating the intersection of art and science through the artistic expression(s) and communication of science.'
+  );
 </script>
 
 <h1>This is the index</h1>
