@@ -36,12 +36,12 @@
 
 <div class="flex flex-col lg:flex-row">
   <div class="lg:pr-20 xl:w-1/2">
-    <h1 class="text-xl">Exhibition location</h1>
+    <h1 class="text-3xl">Exhibition location</h1>
 
-    <span>{address}</span>
+    <span class="mt-2">{address}</span>
   </div>
 
-  <div class="h-[60vh] lg:flex-1">
+  <div class="h-[60vh] mt-4 lg:mt-0 lg:flex-1">
     {#if browser}
       <LeafletMap options={mapOptions}>
         <TileLayer url={tileUrl} options={tileLayerOptions} />
