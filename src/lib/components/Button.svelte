@@ -1,4 +1,4 @@
-<button><slot /></button>
+<button class={$$props.class}><slot /></button>
 
 <style lang="postcss">
   button {
