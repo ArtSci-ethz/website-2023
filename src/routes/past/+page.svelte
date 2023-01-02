@@ -4,6 +4,7 @@
   import type { HeaderContext } from '$lib/components/Header.ts';
   import backgroundImage from '$lib/assets/bg-header-past.png';
   import ArrowRight from '$lib/components/ArrowRight.svelte';
+  import Button from '$lib/components/Button.svelte';
 
   const headerContext: HeaderContext = getContext(key);
   headerContext.setHeaderImage(backgroundImage);
@@ -43,7 +44,7 @@
       <div class="block__submissions__arrow">
         <ArrowRight />
       </div>
-      <button>PAST SUBMISSIONS</button>
+      <Button>PAST SUBMISSIONS</Button>
     </div>
   </div>
 </div>
@@ -81,7 +82,7 @@
       <div class="block__submissions__arrow">
         <ArrowRight />
       </div>
-      <button>PAST SUBMISSIONS</button>
+      <Button>PAST SUBMISSIONS</Button>
     </div>
   </div>
 </div>
@@ -109,9 +110,5 @@
 
   .block__submissions__arrow {
     @apply hidden lg:block lg:flex-1 pr-8;
-  }
-
-  button {
-    @apply border-2 border-gray-700 p-2 mx-2;
   }
 </style>

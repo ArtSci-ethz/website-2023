@@ -9,6 +9,7 @@
   import linImage from '$lib/assets/team-lin.png';
   import paulineImage from '$lib/assets/team-pauline.png';
   import shwethaImage from '$lib/assets/team-shwetha.png';
+  import Button from '$lib/components/Button.svelte';
 
   const headerContext: HeaderContext = getContext(key);
   headerContext.setHeaderImage(backgroundImage);
@@ -115,8 +116,8 @@
     <div class="hidden sm:block sm:flex-1 px-8">
       <ArrowRight />
     </div>
-    <a href="/participate"><button>Participate</button></a>
-    <a href="/join-and-give"><button>Sponsor</button></a>
+    <a href="/participate"><Button>Participate</Button></a>
+    <a href="/join-and-give"><Button>Sponsor</Button></a>
   </div>
 
   <!-- Section: Team -->
@@ -141,10 +142,3 @@
     </div>
   </div>
 </div>
-
-<!-- TODO: Team member profiles -->
-<style lang="postcss">
-  button {
-    @apply border-2 border-gray-700 p-2 mx-2;
-  }
-</style>
