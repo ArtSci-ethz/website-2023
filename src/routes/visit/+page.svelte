@@ -11,6 +11,10 @@
   );
 </script>
 
+<svelte:head>
+  <title>Visit | ArtSci</title>
+</svelte:head>
+
 <h1>Exhibition location</h1>
 
 <div>ETH CHN Universitätstrasse 16, 8006 Zürich</div>

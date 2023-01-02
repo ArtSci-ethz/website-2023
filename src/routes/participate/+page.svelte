@@ -11,4 +11,8 @@
   );
 </script>
 
+<svelte:head>
+  <title>Participate | ArtSci</title>
+</svelte:head>
+
 <div class="text-3xl text-center my-16">Coming soon...</div>

@@ -13,6 +13,10 @@
   );
 </script>
 
+<svelte:head>
+  <title>Past Exhibitions | ArtSci</title>
+</svelte:head>
+
 <div class="block">
   <h2 class="block__title">ArtSci&nbsp;2019&nbsp;– Hémisphères</h2>
   <div>

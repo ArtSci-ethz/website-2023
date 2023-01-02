@@ -51,6 +51,10 @@
   ];
 </script>
 
+<svelte:head>
+  <title>About | ArtSci</title>
+</svelte:head>
+
 <!-- Section 1 -->
 <div class="my-4">
   <div class="grid auto-rows-max gap-4 md:grid-cols-2 md:gap-12 lg:grid-cols-4">

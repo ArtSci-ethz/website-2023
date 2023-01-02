@@ -16,6 +16,10 @@
   );
 </script>
 
+<svelte:head>
+  <title>Join & Give | ArtSci</title>
+</svelte:head>
+
 <!-- Section 1 -->
 <div class="text-xl mt-8 lg:w-1/2 lg:pr-12">
   Partners and sponsors provide crucial support at all stages of the process, making it possible for
