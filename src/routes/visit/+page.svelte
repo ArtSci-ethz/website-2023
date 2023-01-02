@@ -38,7 +38,6 @@
 
 <div class="flex flex-row justify-between items-baseline">
   <h1 class="text-xl">Exhibition location</h1>
-7ec3ca2 (Added leaflet map)
 
   <span>{address}</span>
 </div>
