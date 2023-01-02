@@ -5,8 +5,8 @@
   import backgroundImage from '$lib/assets/bg-header-visit.png';
   // map imports
   import { browser } from '$app/environment';
-  import {LeafletMap, Marker, Popup, Tooltip, TileLayer} from 'svelte-leafletjs?client';
-  import 'leaflet/dist/leaflet.css'
+  import { LeafletMap, Marker, Popup, Tooltip, TileLayer } from 'svelte-leafletjs?client';
+  import 'leaflet/dist/leaflet.css';
 
   const headerContext: HeaderContext = getContext(key);
   headerContext.setHeaderImage(backgroundImage);
@@ -14,42 +14,42 @@
     'ArtSci 2023 is expected to exhibit on the 5th of October - 25th of October, 2023. '
   );
 
-
-  let address = "ETH CHN Universitätstrasse 16, 8006 Zürich";
+  let address = 'ETH CHN Universitätstrasse 16, 8006 Zürich';
   let addressCoordinates = [47.379223, 8.548385];
 
   const mapOptions = {
-      center: addressCoordinates,
-      zoom: 16,
+    center: addressCoordinates,
+    zoom: 16
   };
-  const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+  const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
   const tileLayerOptions = {
-      minZoom: 0,
-      maxZoom: 20,
-      maxNativeZoom: 19,
-      attribution: "© OpenStreetMap contributors",
+    minZoom: 0,
+    maxZoom: 20,
+    maxNativeZoom: 19,
+    attribution: '© OpenStreetMap contributors'
   };
-
 </script>
 
 <svelte:head>
   <title>Visit | ArtSci</title>
 </svelte:head>
 
-<div class="flex flex-row justify-between items-baseline">
-  <h1 class="text-xl">Exhibition location</h1>
+<div class="flex flex-col lg:flex-row">
+  <div class="lg:pr-20 xl:w-1/2">
+    <h1 class="text-xl">Exhibition location</h1>
 
-  <span>{address}</span>
-</div>
+    <span>{address}</span>
+  </div>
 
-<div class="h-[700px] mt-4">
-  {#if browser}
+  <div class="h-[60vh] lg:flex-1">
+    {#if browser}
       <LeafletMap options={mapOptions}>
-          <TileLayer url={tileUrl} options={tileLayerOptions}/>
-          <Marker latLng={addressCoordinates}>
-            <Popup>{address}</Popup>
-            <Tooltip>{address}</Tooltip>
-          </Marker>
+        <TileLayer url={tileUrl} options={tileLayerOptions} />
+        <Marker latLng={addressCoordinates}>
+          <Popup>{address}</Popup>
+          <Tooltip>{address}</Tooltip>
+        </Marker>
       </LeafletMap>
-  {/if}
+    {/if}
+  </div>
 </div>
