@@ -20,59 +20,74 @@
   const images = [
     {
       original: img01,
-      thumbnail: img01
+      thumbnail: img01,
+      description: 'Santiago Ramón y Cajal - Glial cells of the Cerebral Cortex of a Child'
     },
     {
       original: img02,
-      thumbnail: img02
+      thumbnail: img02,
+      description: 'Fabian Oefner - Millefiori'
     },
     {
       original: img03,
-      thumbnail: img03
+      thumbnail: img03,
+      description: 'Kerry Mitchell - Curosity'
     },
     {
       original: img04,
-      thumbnail: img04
+      thumbnail: img04,
+      description: 'Klaus Kemp - The Diatomist'
     },
     {
       original: img05,
-      thumbnail: img05
+      thumbnail: img05,
+      description: 'Michael Pinsky - Pollution Pods'
     },
     {
       original: img06,
-      thumbnail: img06
+      thumbnail: img06,
+      description: 'Jill Pelto - Increasing Forest Fire Activity'
     },
     {
       original: img07,
-      thumbnail: img07
+      thumbnail: img07,
+      description: 'John Gerrad - Solar Reserve'
     },
     {
       original: img08,
-      thumbnail: img08
+      thumbnail: img08,
+      description: 'Rose-Lynn Fisher - Topography of Tears'
     },
     {
       original: img09,
-      thumbnail: img09
+      thumbnail: img09,
+      description: 'Lily Simonson - Painting in the Deep'
     },
     {
       original: img10,
-      thumbnail: img10
+      thumbnail: img10,
+      description: 'Courtney Mattison - Confluence (Our Changing Seas V)'
     },
     {
       original: img11,
-      thumbnail: img11
+      thumbnail: img11,
+      description: 'Beata Edyta Mierzwa - The Final Cut'
     },
     {
       original: img12,
-      thumbnail: img12
+      thumbnail: img12,
+      description: 'Dr Greg Dunn & Dr Brian Edwards - Self Reflected'
     },
     {
       original: img13,
-      thumbnail: img13
+      thumbnail: img13,
+      description: 'John Malik - Phases of the heart'
     },
     {
       original: img14,
-      thumbnail: img14
+      thumbnail: img14,
+      description:
+        'Persijn Broersen and Margit Lukács - Shvayg Mayn Harts, 2018 3D-print (PLA), full HD film'
     }
   ];
 
@@ -80,15 +95,30 @@
   let currentIndex = 0;
 </script>
 
-<div class="grid grid-cols-3 gap-2">
+<div class="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
   {#each images as image, i}
-    <img
-      src={image.original}
-      on:click={() => {
-        showGallery = true;
-        currentIndex = i;
-      }}
-    />
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <div class="relative">
+      <img
+        src={image.original}
+        class="object-cover h-full w-full aspect-square"
+        alt="blabla"
+        on:click={() => {
+          showGallery = true;
+          currentIndex = i;
+        }}
+      />
+      <div
+        class="w-full h-full absolute top-0 left-0 z-10 opacity-0 hover:opacity-100 ease-in-out transition-opacity duration-700 flex flex-col"
+      >
+        <div class="flex-1" />
+        <div class="bg-black opacity-80 p-4">
+          <span class="opacity-100 text-white">
+            {image.description}
+          </span>
+        </div>
+      </div>
+    </div>
   {/each}
 </div>
 
@@ -98,7 +128,7 @@
       items={images}
       startIndex={currentIndex}
       onClick={() => (showGallery = false)}
-      thumbnailHeight='200px'
+      thumbnailHeight="200px"
     />
   </div>
 {/if}
@@ -108,5 +138,4 @@
     height: 60px;
     aspect-ratio: 1;
   }
-
 </style>
