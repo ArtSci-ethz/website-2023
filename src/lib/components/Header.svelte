@@ -12,7 +12,7 @@
 
 <header
   class="w-full h-96 pb-12 bg-cover bg-left-bottom"
-  style="background-image: url({backgroundImage});"
+  style={backgroundImage ? `background-image: url(${backgroundImage});` : ''}
 >
   <div class="common-width">
     <div class="flex flex-row justify-between">
@@ -42,9 +42,11 @@
     </div>
 
     <!-- Text -->
-    <div class="mt-12 float-right mr-4 text-xl">
-      {text}
-    </div>
+    {#if text}
+      <div class="mt-12 float-right mr-4 text-xl">
+        {text}
+      </div>
+    {/if}
   </div>
 </header>
 
