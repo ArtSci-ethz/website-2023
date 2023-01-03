@@ -5,7 +5,7 @@
   import backgroundImage from '$lib/assets/bg-header-visit.png';
   import ArtSciGallery from '$lib/components/ArtSciGallery.svelte';
 
-    import type { list } from 'postcss';
+  import type { list } from 'postcss';
 
   const headerContext: HeaderContext = getContext(key);
   headerContext.setHeaderImage(backgroundImage);

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "react-image-gallery/styles/css/image-gallery.css";
+  import 'react-image-gallery/styles/css/image-gallery.css';
   import ImageGallery from 'react-image-gallery';
 
   import img01 from '$lib/assets/artscights/1.-Santiago-Ramón-y-Cajal-Glial-cells-of-the-Cerebral-Cortex-of-a-Child.jpg';
@@ -20,78 +20,93 @@
   const images = [
     {
       original: img01,
-      thumbnail: img01,
+      thumbnail: img01
     },
     {
       original: img02,
-      thumbnail: img02,
+      thumbnail: img02
     },
     {
       original: img03,
-      thumbnail: img03,
+      thumbnail: img03
     },
     {
       original: img04,
-      thumbnail: img04,
+      thumbnail: img04
     },
     {
       original: img05,
-      thumbnail: img05,
+      thumbnail: img05
     },
     {
       original: img06,
-      thumbnail: img06,
+      thumbnail: img06
     },
     {
       original: img07,
-      thumbnail: img07,
+      thumbnail: img07
     },
     {
       original: img08,
-      thumbnail: img08,
+      thumbnail: img08
     },
     {
       original: img09,
-      thumbnail: img09,
+      thumbnail: img09
     },
     {
       original: img10,
-      thumbnail: img10,
+      thumbnail: img10
     },
     {
       original: img11,
-      thumbnail: img11,
+      thumbnail: img11
     },
     {
       original: img12,
-      thumbnail: img12,
+      thumbnail: img12
     },
     {
       original: img13,
-      thumbnail: img13,
+      thumbnail: img13
     },
     {
       original: img14,
-      thumbnail: img14,
-    },
+      thumbnail: img14
+    }
   ];
 
   let showGallery = false;
   let currentIndex = 0;
-
 </script>
 
 <div class="grid grid-cols-3 gap-2">
   {#each images as image, i}
-    <img src={image.original} on:click={() => {
-      showGallery = true;
-      currentIndex = i;
-    }} />
+    <img
+      src={image.original}
+      on:click={() => {
+        showGallery = true;
+        currentIndex = i;
+      }}
+    />
   {/each}
 </div>
 
 {#if showGallery}
   <div class="w-full h-full fixed top-0 left-0 bg-black bg-opacity-80">
-    <react:ImageGallery items={images} startIndex={currentIndex} onClick={() => showGallery = false}/>
+    <react:ImageGallery
+      items={images}
+      startIndex={currentIndex}
+      onClick={() => (showGallery = false)}
+      thumbnailHeight='200px'
+    />
   </div>
 {/if}
+
+<style lang="postcss">
+  :global(.image-gallery-thumbnail-image) {
+    height: 60px;
+    aspect-ratio: 1;
+  }
+
+</style>
