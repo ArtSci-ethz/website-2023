@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '../app.css';
+  import '../../app.css';
   import Header from '$lib/components/Header.svelte';
   import { setContext } from 'svelte';
   import { key } from '$lib/components/Header.ts';

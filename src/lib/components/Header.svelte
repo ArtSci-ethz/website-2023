@@ -1,6 +1,6 @@
 <script lang="ts">
   import MenuLink from './MenuLink.svelte';
-  import logo from '$lib/assets/logo.svg';
+  import logo from '$lib/assets/logo_black.svg';
   import OffcanvasNav from '$lib/components/OffcanvasNav.svelte';
   import TiThMenu from 'svelte-icons/ti/TiThMenu.svelte';
 
@@ -18,12 +18,12 @@
     <div class="flex flex-row justify-between">
       <!-- Logo -->
       <div>
-        <img alt="The ArtSci logo" src={logo} />
+        <a href="/"><img alt="The ArtSci logo" src={logo} /></a>
       </div>
 
       <!-- Menu -->
       <div class="hidden md:block ml-8 w-8/12 flex flex-row justify-between items-end">
-        <MenuLink href="/" text="About" />
+        <MenuLink href="/about" text="About" />
         <MenuLink href="/visit" text="Visit" />
         <MenuLink href="/participate" text="Participate" />
         <MenuLink href="/past" text="Past Exhibitions" />

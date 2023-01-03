@@ -19,7 +19,7 @@
   <div
     class="divide-y-2 divide-gray-300 divide-solid border-t-2 border-b-2 border-gray-300 border-solid"
   >
-    <OffcanvasNavItem on:click={() => onClose()} href="/" text="About" />
+    <OffcanvasNavItem on:click={() => onClose()} href="/about" text="About" />
     <OffcanvasNavItem on:click={() => onClose()} href="/visit" text="Visit" />
     <OffcanvasNavItem on:click={() => onClose()} href="/participate" text="Participate" />
     <OffcanvasNavItem on:click={() => onClose()} href="/past" text="Past Exhibitions" />
