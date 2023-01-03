@@ -36,6 +36,8 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/adapter-static": "^1.0.0",
-    "svelte-icons": "^2.1.0"
+    "react-image-gallery": "^1.2.11",
+    "svelte-icons": "^2.1.0",
+    "svelte-preprocess-react": "^0.14.0"
   }
 }
