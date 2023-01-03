@@ -11,7 +11,7 @@
 </script>
 
 <header
-  class="w-full h-96 py-12 bg-cover bg-left-bottom"
+  class="w-full h-96 pb-12 bg-cover bg-left-bottom"
   style="background-image: url({backgroundImage});"
 >
   <div class="common-width">
@@ -22,7 +22,7 @@
       </div>
 
       <!-- Menu -->
-      <div class="hidden md:block ml-8 w-8/12 flex flex-row justify-between items-end">
+      <div class="hidden ml-8 w-8/12 md:flex flex-row justify-between items-end">
         <MenuLink href="/about" text="About" />
         <MenuLink href="/visit" text="Visit" />
         <MenuLink href="/participate" text="Participate" />
