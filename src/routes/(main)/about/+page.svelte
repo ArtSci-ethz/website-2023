@@ -136,7 +136,7 @@
     >
       {#each members as member}
         <div>
-          <div class="w-[344px] h-[347px] overflow-hidden">
+          <div class="overflow-hidden">
             <img alt={member.name} src={member.picture} class=" hover:scale-110 transition-all" />
           </div>
           <div class="font-bold">{member.name}</div>
