@@ -98,16 +98,14 @@
 <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
   {#each images as image, i}
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div class="relative">
-      <img
-        src={image.original}
-        class="object-cover h-full w-full aspect-square"
-        alt="blabla"
-        on:click={() => {
-          showGallery = true;
-          currentIndex = i;
-        }}
-      />
+    <div
+      class="relative"
+      on:click={() => {
+        showGallery = true;
+        currentIndex = i;
+      }}
+    >
+      <img src={image.original} class="object-cover h-full w-full aspect-square" alt="blabla" />
       <div
         class="w-full h-full absolute top-0 left-0 z-10 opacity-0 hover:opacity-100 ease-in-out transition-opacity duration-700 flex flex-col"
       >
@@ -123,7 +121,7 @@
 </div>
 
 {#if showGallery}
-  <div class="w-full h-full fixed top-0 left-0 bg-black bg-opacity-80">
+  <div class="w-full h-full fixed top-0 left-0 bg-black bg-opacity-80 z-20">
     <react:ImageGallery
       items={images}
       startIndex={currentIndex}
