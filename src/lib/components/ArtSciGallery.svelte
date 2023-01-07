@@ -136,4 +136,16 @@
     height: 60px;
     aspect-ratio: 1;
   }
+  :global(.image-gallery-slides) {
+    @apply flex flex-row flex-auto;
+    height: calc(100vh - 80px);
+  }
+  :global(.image-gallery-slide) {
+    width: 100vw;
+  }
+  :global(image-gallery-image) {
+    width: unset;
+    height: unset;
+    margin: auto;
+  }
 </style>
