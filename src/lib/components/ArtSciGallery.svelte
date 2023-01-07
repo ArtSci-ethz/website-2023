@@ -1,6 +1,6 @@
 <script lang="ts">
-  import 'react-image-gallery/styles/css/image-gallery.css';
-  import ImageGallery from 'react-image-gallery';
+  //   import 'react-image-gallery/styles/css/image-gallery.css';
+  import ImageGallery from '@react2svelte/image-gallery/ImageGallery.svelte';
 
   import img01 from '$lib/assets/artscights/1.-Santiago-Ramón-y-Cajal-Glial-cells-of-the-Cerebral-Cortex-of-a-Child.jpg';
   import img02 from '$lib/assets/artscights/2.-Fabian-Oefner-Millefiori.jpg';
@@ -122,14 +122,12 @@
 
 {#if showGallery}
   <div class="w-full h-full fixed top-0 left-0 bg-black bg-opacity-80 z-20">
-    <react:ImageGallery
-      items={images}
-      startIndex={currentIndex}
-      onClick={() => (showGallery = false)}
-      thumbnailHeight="200px"
-    />
+    <ImageGallery items={images} startIndex={currentIndex} on:click={() => (showGallery = false)} />
   </div>
 {/if}
+
+<!--
+Custom styles to prevent scaling small images up
 
 <style lang="postcss">
   :global(.image-gallery-thumbnail-image) {
@@ -149,3 +147,4 @@
     margin: auto;
   }
 </style>
+-->
