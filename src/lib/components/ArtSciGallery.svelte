@@ -1,5 +1,6 @@
 <script lang="ts">
   import ImageGallery from '@react2svelte/image-gallery/ImageGallery.svelte';
+  import FaHome from 'svelte-icons/fa/FaHome.svelte';
 
   import img01 from '$lib/assets/artscights/1.-Santiago-Ramón-y-Cajal-Glial-cells-of-the-Cerebral-Cortex-of-a-Child.jpg';
   import img02 from '$lib/assets/artscights/2.-Fabian-Oefner-Millefiori.jpg';
@@ -34,73 +35,87 @@
     {
       original: img01,
       thumbnail: img01t,
-      description: 'Santiago Ramón y Cajal - Glial cells of the Cerebral Cortex of a Child'
+      description: 'Santiago Ramón y Cajal - Glial cells of the Cerebral Cortex of a Child',
+      url: 'https://www.nytimes.com/2018/01/18/arts/design/brain-neuroscience-santiago-ramon-y-cajal-grey-gallery.html'
     },
     {
       original: img02,
       thumbnail: img02t,
-      description: 'Fabian Oefner - Millefiori'
+      description: 'Fabian Oefner - Millefiori',
+      url: 'https://fabianoefner.com/'
     },
     {
       original: img03,
       thumbnail: img03t,
-      description: 'Kerry Mitchell - Curosity'
+      description: 'Kerry Mitchell - Curosity',
+      url: 'http://www.kerrymitchellart.com/gallery30/curiosity.html'
     },
     {
       original: img04,
       thumbnail: img04t,
-      description: 'Klaus Kemp - The Diatomist'
+      description: 'Klaus Kemp - The Diatomist',
+      url: 'https://vimeo.com/90160649'
     },
     {
       original: img05,
       thumbnail: img05t,
-      description: 'Michael Pinsky - Pollution Pods'
+      description: 'Michael Pinsky - Pollution Pods',
+      url: 'https://www.somersethouse.org.uk/whats-on/michael-pinsky-pollution-pods'
     },
     {
       original: img06,
       thumbnail: img06t,
-      description: 'Jill Pelto - Increasing Forest Fire Activity'
+      description: 'Jill Pelto - Increasing Forest Fire Activity',
+      url: 'https://www.jillpelto.com/increasing-forest-fire-activity'
     },
     {
       original: img07,
       thumbnail: img07t,
-      description: 'John Gerrad - Solar Reserve'
+      description: 'John Gerrad - Solar Reserve',
+      url: 'http://www.johngerrard.net/solar-reserve.html'
     },
     {
       original: img08,
       thumbnail: img08t,
-      description: 'Rose-Lynn Fisher - Topography of Tears'
+      description: 'Rose-Lynn Fisher - Topography of Tears',
+      url: 'https://www.smithsonianmag.com/science-nature/the-microscopic-structures-of-dried-human-tears-180947766/#7pLRo8sO4kUDw3lQ.41'
     },
     {
       original: img09,
       thumbnail: img09t,
-      description: 'Lily Simonson - Painting in the Deep'
+      description: 'Lily Simonson - Painting in the Deep',
+      url: 'https://hmnh.harvard.edu/file/986586'
     },
     {
       original: img10,
       thumbnail: img10t,
-      description: 'Courtney Mattison - Confluence (Our Changing Seas V)'
+      description: 'Courtney Mattison - Confluence (Our Changing Seas V)',
+      url: 'https://courtneymattison.com/confluence/#itemId=5bc57d81e79c7018651d5fd2'
     },
     {
       original: img11,
       thumbnail: img11t,
-      description: 'Beata Edyta Mierzwa - The Final Cut'
+      description: 'Beata Edyta Mierzwa - The Final Cut',
+      url: 'http://www.beatascienceart.com/'
     },
     {
       original: img12,
       thumbnail: img12t,
-      description: 'Dr Greg Dunn & Dr Brian Edwards - Self Reflected'
+      description: 'Dr Greg Dunn & Dr Brian Edwards - Self Reflected',
+      url: 'https://www.youtube.com/watch?v=V5F7snIJ-is'
     },
     {
       original: img13,
       thumbnail: img13t,
-      description: 'John Malik - Phases of the heart'
+      description: 'John Malik - Phases of the heart',
+      url: 'https://pratt.duke.edu/about/news/heart-phase-image-takes-top-prize-2018-envisioning-invisible-contest'
     },
     {
       original: img14,
       thumbnail: img14t,
       description:
-        'Persijn Broersen and Margit Lukács - Shvayg Mayn Harts, 2018 3D-print (PLA), full HD film'
+        'Persijn Broersen and Margit Lukács - Shvayg Mayn Harts, 2018 3D-print (PLA), full HD film',
+      url: 'https://www.foam.org/events/persijn-broersen-margit-lukacs'
     }
   ];
 
@@ -135,6 +150,13 @@
           <span class="opacity-100 text-white">
             {image.description}
           </span>
+          <!-- The hover color is a color that is also present in the header image -->
+          <div
+            class="w-6 h-6 absolute right-2 bottom-2 text-white hover:text-[#a3ac8c]"
+            on:click={(e) => e.stopPropagation()}
+          >
+            <a href={image.url} target="_blank"><FaHome /></a>
+          </div>
         </div>
       </div>
     </div>
