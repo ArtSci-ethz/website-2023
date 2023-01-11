@@ -15,76 +15,90 @@
   import img12 from '$lib/assets/artscights/12.-Dr-Greg-Dunn-Dr-Brian-Edwards-Self-Relfected.jpg';
   import img13 from '$lib/assets/artscights/13.-John-Malik-Phases-of-the-heart.jpg';
   import img14 from '$lib/assets/artscights/14.-Persijn-Broersen-and-Margit-Lukács-Shvayg-Mayn-Harts-2018-3D-print-PLA-full-HD-film-With-Hermann-Yablokoff-music-Berend-Dubbe-Gwendolyn-Thomas-arrangement-performance-and-Alec-Kopyt-vocals-.jpg';
+  import img01t from '$lib/assets/artscights/1_tn.jpg';
+  import img02t from '$lib/assets/artscights/2_tn.jpg';
+  import img03t from '$lib/assets/artscights/3_tn.jpg';
+  import img04t from '$lib/assets/artscights/4_tn.jpg';
+  import img05t from '$lib/assets/artscights/5_tn.jpg';
+  import img06t from '$lib/assets/artscights/6_tn.jpg';
+  import img07t from '$lib/assets/artscights/7_tn.jpg';
+  import img08t from '$lib/assets/artscights/8_tn.jpg';
+  import img09t from '$lib/assets/artscights/9_tn.jpg';
+  import img10t from '$lib/assets/artscights/10_tn.jpg';
+  import img11t from '$lib/assets/artscights/11_tn.jpg';
+  import img12t from '$lib/assets/artscights/12_tn.jpg';
+  import img13t from '$lib/assets/artscights/13_tn.jpg';
+  import img14t from '$lib/assets/artscights/14_tn.jpg';
 
   const images = [
     {
       original: img01,
-      thumbnail: img01,
+      thumbnail: img01t,
       description: 'Santiago Ramón y Cajal - Glial cells of the Cerebral Cortex of a Child'
     },
     {
       original: img02,
-      thumbnail: img02,
+      thumbnail: img02t,
       description: 'Fabian Oefner - Millefiori'
     },
     {
       original: img03,
-      thumbnail: img03,
+      thumbnail: img03t,
       description: 'Kerry Mitchell - Curosity'
     },
     {
       original: img04,
-      thumbnail: img04,
+      thumbnail: img04t,
       description: 'Klaus Kemp - The Diatomist'
     },
     {
       original: img05,
-      thumbnail: img05,
+      thumbnail: img05t,
       description: 'Michael Pinsky - Pollution Pods'
     },
     {
       original: img06,
-      thumbnail: img06,
+      thumbnail: img06t,
       description: 'Jill Pelto - Increasing Forest Fire Activity'
     },
     {
       original: img07,
-      thumbnail: img07,
+      thumbnail: img07t,
       description: 'John Gerrad - Solar Reserve'
     },
     {
       original: img08,
-      thumbnail: img08,
+      thumbnail: img08t,
       description: 'Rose-Lynn Fisher - Topography of Tears'
     },
     {
       original: img09,
-      thumbnail: img09,
+      thumbnail: img09t,
       description: 'Lily Simonson - Painting in the Deep'
     },
     {
       original: img10,
-      thumbnail: img10,
+      thumbnail: img10t,
       description: 'Courtney Mattison - Confluence (Our Changing Seas V)'
     },
     {
       original: img11,
-      thumbnail: img11,
+      thumbnail: img11t,
       description: 'Beata Edyta Mierzwa - The Final Cut'
     },
     {
       original: img12,
-      thumbnail: img12,
+      thumbnail: img12t,
       description: 'Dr Greg Dunn & Dr Brian Edwards - Self Reflected'
     },
     {
       original: img13,
-      thumbnail: img13,
+      thumbnail: img13t,
       description: 'John Malik - Phases of the heart'
     },
     {
       original: img14,
-      thumbnail: img14,
+      thumbnail: img14t,
       description:
         'Persijn Broersen and Margit Lukács - Shvayg Mayn Harts, 2018 3D-print (PLA), full HD film'
     }
