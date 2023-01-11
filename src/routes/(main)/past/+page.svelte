@@ -44,12 +44,13 @@
         for you here at ETH.
       </div>
     </div>
-    <div class="block__submissions">
-      <div class="block__submissions__arrow">
-        <ArrowRight />
-      </div>
-      <Button>PAST SUBMISSIONS</Button>
-    </div>
+    <!-- TODO: add past submissions page -->
+    <!--    <div class="block__submissions">-->
+    <!--      <div class="block__submissions__arrow">-->
+    <!--        <ArrowRight />-->
+    <!--      </div>-->
+    <!--      <Button>PAST SUBMISSIONS</Button>-->
+    <!--    </div>-->
   </div>
 </div>
 
@@ -82,12 +83,13 @@
         partners at the Fine Art Collective and Boesner.
       </div>
     </div>
-    <div class="block__submissions">
-      <div class="block__submissions__arrow">
-        <ArrowRight />
-      </div>
-      <Button>PAST SUBMISSIONS</Button>
-    </div>
+    <!-- TODO: add past submissions page -->
+    <!--    <div class="block__submissions">-->
+    <!--      <div class="block__submissions__arrow">-->
+    <!--        <ArrowRight />-->
+    <!--      </div>-->
+    <!--      <Button>PAST SUBMISSIONS</Button>-->
+    <!--    </div>-->
   </div>
 </div>
 
