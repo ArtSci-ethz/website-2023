@@ -23,6 +23,7 @@
     <OffcanvasNavItem on:click={() => onClose()} href="/visit" text="Visit" />
     <OffcanvasNavItem on:click={() => onClose()} href="/participate" text="Participate" />
     <OffcanvasNavItem on:click={() => onClose()} href="/past" text="Past Exhibitions" />
+    <OffcanvasNavItem on:click={() => onClose()} href="/artscights" text="Past Exhibitions" />
     <OffcanvasNavItem on:click={() => onClose()} href="/join-and-give" text="Join & Give" />
   </div>
 </div>

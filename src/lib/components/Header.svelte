@@ -27,6 +27,7 @@
         <MenuLink href="/visit" text="Visit" />
         <MenuLink href="/participate" text="Participate" />
         <MenuLink href="/past" text="Past Exhibitions" />
+        <MenuLink href="/artscights" text="ArtScights" />
         <MenuLink href="/join-and-give" text="Join & Give" />
       </div>
 
