@@ -1,6 +1,7 @@
 <script lang="ts">
   import ImageGallery from '@react2svelte/image-gallery/ImageGallery.svelte';
   import FaHome from 'svelte-icons/fa/FaHome.svelte';
+  import ExternalLink from '$lib/components/ExternalLink.svelte';
 
   import img01 from '$lib/assets/artscights/1.-Santiago-Ramón-y-Cajal-Glial-cells-of-the-Cerebral-Cortex-of-a-Child.jpg';
   import img02 from '$lib/assets/artscights/2.-Fabian-Oefner-Millefiori.jpg';
@@ -155,7 +156,7 @@
             class="w-6 h-6 absolute right-2 bottom-2 text-white hover:text-[#a3ac8c]"
             on:click={(e) => e.stopPropagation()}
           >
-            <a href={image.url} target="_blank"><FaHome /></a>
+            <ExternalLink href={image.url}><FaHome /></ExternalLink>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@
   import sponsorUsysImage from '$lib/assets/sponsor-usys.png';
   import ArrowRight from '$lib/components/ArrowRight.svelte';
   import Button from '$lib/components/Button.svelte';
+  import ExternalLink from '$lib/components/ExternalLink.svelte';
 
   const headerContext: HeaderContext = getContext(key);
   headerContext.setHeaderImage(backgroundImage);
@@ -66,14 +67,24 @@
   <div class="flex flex-wrap flex-1 gap-8">
     <h2>Our Sponsors</h2>
     <div>
-      <div><img alt="ETH Zurich" src={sponsorEthzImage} /></div>
       <div>
-        <img
-          alt="Department of Environmental Systems Science (D-USYS), ETH Zurich"
-          src={sponsorUsysImage}
-        />
+        <ExternalLink href="https://ethz.ch/en.html"
+          ><img alt="ETH Zurich" src={sponsorEthzImage} /></ExternalLink
+        >
       </div>
-      <div><img alt="SOSETH" src={sponsorSosImage} /></div>
+      <div>
+        <ExternalLink href="https://usys.ethz.ch/en/"
+          ><img
+            alt="Department of Environmental Systems Science (D-USYS), ETH Zurich"
+            src={sponsorUsysImage}
+          /></ExternalLink
+        >
+      </div>
+      <div>
+        <ExternalLink href="https://sos.ethz.ch/"
+          ><img alt="SOSETH" src={sponsorSosImage} /></ExternalLink
+        >
+      </div>
     </div>
   </div>
 </div>
