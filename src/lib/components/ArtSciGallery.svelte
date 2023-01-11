@@ -1,5 +1,4 @@
 <script lang="ts">
-  //   import 'react-image-gallery/styles/css/image-gallery.css';
   import ImageGallery from '@react2svelte/image-gallery/ImageGallery.svelte';
 
   import img01 from '$lib/assets/artscights/1.-Santiago-Ramón-y-Cajal-Glial-cells-of-the-Cerebral-Cortex-of-a-Child.jpg';
@@ -93,19 +92,27 @@
 
   let showGallery = false;
   let currentIndex = 0;
+  let gallery: ImageGallery;
 </script>
 
 <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
   {#each images as image, i}
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div
-      class="relative"
+      class="relative cursor-pointer"
       on:click={() => {
         showGallery = true;
         currentIndex = i;
+        // Ugly code to make sure that fullScreen() is only called after the gallery is mounted. It would be better
+        // to move the gallery into another component that calls fullScreen() as soon as it has been mounted.
+        setTimeout(() => gallery.fullScreen(), 50);
       }}
     >
-      <img src={image.original} class="object-cover h-full w-full aspect-square" alt="blabla" />
+      <img
+        src={image.original}
+        class="object-cover h-full w-full aspect-square"
+        alt={image.description}
+      />
       <div
         class="w-full h-full absolute top-0 left-0 z-10 opacity-0 hover:opacity-100 ease-in-out transition-opacity duration-700 flex flex-col"
       >
@@ -121,30 +128,14 @@
 </div>
 
 {#if showGallery}
-  <div class="w-full h-full fixed top-0 left-0 bg-black bg-opacity-80 z-20">
-    <ImageGallery items={images} startIndex={currentIndex} on:click={() => (showGallery = false)} />
+  <div class="z-20 absolute">
+    <ImageGallery
+      bind:this={gallery}
+      items={images}
+      startIndex={currentIndex}
+      useBrowserFullscreen={false}
+      on:click={() => (showGallery = false)}
+      on:screenchange={({ detail }) => (showGallery = detail.fullscreen)}
+    />
   </div>
 {/if}
-
-<!--
-Custom styles to prevent scaling small images up
-
-<style lang="postcss">
-  :global(.image-gallery-thumbnail-image) {
-    height: 60px;
-    aspect-ratio: 1;
-  }
-  :global(.image-gallery-slides) {
-    @apply flex flex-row flex-auto;
-    height: calc(100vh - 80px);
-  }
-  :global(.image-gallery-slide) {
-    width: 100vw;
-  }
-  :global(image-gallery-image) {
-    width: unset;
-    height: unset;
-    margin: auto;
-  }
-</style>
--->
