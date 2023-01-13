@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ImageGallery from '@react2svelte/image-gallery/ImageGallery.svelte';
+  import ImageGallery from '@react2svelte/image-gallery';
   import FaHome from 'svelte-icons/fa/FaHome.svelte';
   import ExternalLink from '$lib/components/ExternalLink.svelte';
 
