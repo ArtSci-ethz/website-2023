@@ -22,7 +22,7 @@
 </svelte:head>
 
 <!-- Section 1 -->
-<div class="text-xl mt-8 lg:w-1/2 lg:pr-12">
+<div class="text-2xl mt-8 lg:w-1/2 lg:pr-12">
   Partners and sponsors provide crucial support at all stages of the process, making it possible for
   the organization and realization of a two week exhibition at ETH Zurich, complete with workshops,
   talks and festivities.
@@ -58,8 +58,16 @@
   <div class="flex gap-8 flex-wrap flex-1">
     <h2>Contact Us</h2>
     <div>
-      <div>Write to us at: artsci.ethz@gmail.com</div>
-      <div>Or ring us at: +49-17663440401</div>
+      <div>
+        Write to us at:
+        <div class="underline">
+          <a href="mailto:artsci.ethz@gmail.com">artsci.ethz@gmail.com</a>
+        </div>
+      </div>
+      <div class="mt-2">
+        Or ring us at:
+        <div><a href="tel:+49-17663440401">+49-17663440401</a></div>
+      </div>
     </div>
   </div>
 

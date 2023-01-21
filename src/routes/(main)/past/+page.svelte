@@ -49,7 +49,7 @@
     <!--      <div class="block__submissions__arrow">-->
     <!--        <ArrowRight />-->
     <!--      </div>-->
-    <!--      <Button>PAST SUBMISSIONS</Button>-->
+    <!--      <Button>Past Submissions</Button>-->
     <!--    </div>-->
   </div>
 </div>
@@ -88,7 +88,7 @@
     <!--      <div class="block__submissions__arrow">-->
     <!--        <ArrowRight />-->
     <!--      </div>-->
-    <!--      <Button>PAST SUBMISSIONS</Button>-->
+    <!--      <Button>Past Submissions</Button>-->
     <!--    </div>-->
   </div>
 </div>

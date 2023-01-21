@@ -44,7 +44,7 @@
 
     <!-- Text -->
     {#if text}
-      <div class="mt-12 float-right mr-4 text-xl">
+      <div class="mt-12 float-right mr-4 text-2xl md:w-2/3 lg:w-1/2 md:text-3xl">
         {text}
       </div>
     {/if}

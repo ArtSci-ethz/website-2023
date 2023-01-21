@@ -14,7 +14,7 @@
     'ArtSci 2023 is expected to exhibit on the 5th of October - 25th of October, 2023. '
   );
 
-  let address = 'ETH CHN Universitätstrasse 16, 8006 Zürich';
+  let address = 'ETH CHN, Universitätstrasse 16, 8006 Zürich';
   let addressCoordinates = [47.379223, 8.548385];
 
   const mapOptions = {
@@ -34,14 +34,14 @@
   <title>Visit | ArtSci</title>
 </svelte:head>
 
-<div class="flex flex-col lg:flex-row">
-  <div class="lg:pr-20 xl:w-1/2">
+<div class="flex flex-col">
+  <div>
     <h1 class="text-3xl">Exhibition location</h1>
 
-    <span class="mt-2">{address}</span>
+    <div class="mt-2 text-lg">{address}</div>
   </div>
 
-  <div class="h-[60vh] mt-4 lg:mt-0 lg:flex-1">
+  <div class="h-[60vh] mt-4">
     {#if browser}
       <LeafletMap options={mapOptions}>
         <TileLayer url={tileUrl} options={tileLayerOptions} />

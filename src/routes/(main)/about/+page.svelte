@@ -87,7 +87,7 @@
   </div>
 
   <!-- Section 2 -->
-  <div class="text-xl mt-8 lg:w-1/2 lg:pr-12">
+  <div class="text-2xl mt-8 lg:w-1/2 lg:pr-12">
     ArtSci (“artsy”) started in 2018 as an idea that science should be accessible to all. At a time
     when our knowledge of the universe ranges from Higgs bosons to collisions of black holes, it is
     important to find creative ways to communicate the magic of new discoveries.

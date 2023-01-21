@@ -8,13 +8,19 @@
     <div>© ArtSci 2023</div>
     <div class="flex-1" />
     <div class="">
-      Visit our <ExternalLink href="https://www.facebook.com/ArtSci.ETHZ/">Facebook</ExternalLink>
+      Visit our <span class="social-media-btn"
+        ><ExternalLink href="https://www.facebook.com/ArtSci.ETHZ/">Facebook</ExternalLink></span
+      >
     </div>
     <div class="">
-      Visit our <ExternalLink href="https://twitter.com/artsci_ethz">Twitter</ExternalLink>
+      Visit our <span class="social-media-btn"
+        ><ExternalLink href="https://twitter.com/artsci_ethz">Twitter</ExternalLink></span
+      >
     </div>
     <div class="">
-      Visit our <ExternalLink href="https://www.instagram.com/artsci.ethz/">Instagram</ExternalLink>
+      Visit our <span class="social-media-btn"
+        ><ExternalLink href="https://www.instagram.com/artsci.ethz/">Instagram</ExternalLink></span
+      >
     </div>
     <div class="w-6">
       <ExternalLink href="https://github.com/ArtSci-ethz"><FaGithub /></ExternalLink>
@@ -23,7 +29,7 @@
 </footer>
 
 <style lang="postcss">
-  a {
+  .social-media-btn {
     @apply font-bold underline;
   }
 </style>
