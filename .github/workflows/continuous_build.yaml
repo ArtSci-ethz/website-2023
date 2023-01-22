@@ -1,4 +1,7 @@
 name: Continuous Build
+# A github action that automatically builds from the main branch
+# and tags the main branch as 'latest' and then builds a release
+# for it.
 
 on:
   push:
@@ -18,10 +21,14 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: zip -r build.zip build/*
+      # Github requires a tag to make a release. 'latest-tag' action
+      # automatically moves the latest tag to the current tag.
       - name: Move latest tag
         uses: EndBug/latest-tag@latest
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          # explicitly refer to the tag here, because the action ref
+          # points to the main branch
           tag_name: latest
           files: build.zip
