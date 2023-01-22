@@ -11,12 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Move latest tag
-        uses: EndBug/latest-tag@latest
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          ref: 'latest'
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -24,7 +18,10 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: zip -r build.zip build/*
+      - name: Move latest tag
+        uses: EndBug/latest-tag@latest
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          tag_name: latest
           files: build.zip
