@@ -59,16 +59,11 @@
 <div class="my-4">
   <div class="grid auto-rows-max gap-4 md:grid-cols-2 md:gap-12 lg:grid-cols-4">
     <div>
-      To scientists, surfaces are much more than what meets the eye. A surface is a boundary, the
-      outermost layer of atoms, something made real by shadows, where light and electrons diffract,
-      a biological membrane where enzymes catalyse life-sustaining reactions or the interactive
-      interface of a computer connecting us to the virtual world.
-    </div>
-    <div>
-      ArtSci 2023 re-codes and re-thinks the significance of boundaries, inviting people to explore
-      what defines a surface – and what lies beyond it. We are the embodiment of the Uncertainty
-      Principle – never without science or art, but constantly striving to understand our position
-      within both.
+      ArtSci celebrates the intersection of art and science through a two week exhibition held at
+      ETH Zurich. This festival is open to everyone — all that is needed is a piece (visual,
+      auditory, multimedia, etc) that expresses science in an artistic way. It’s really up to the
+      scientists, artists, and the audience, to explore these boundaries and we at ArtSci are
+      excited to see what can be achieved in this chiasma of Art+Science.
     </div>
     <div>
       With ETH as the nucleus, we want to facilitate the diffusion of new conversations, catalyse
@@ -84,24 +79,6 @@
       vision with the scientific community and the general public in what has been one of science’s
       most significant places for over a century.
     </div>
-  </div>
-
-  <!-- Section 2 -->
-  <div class="text-2xl mt-8 lg:w-1/2 lg:pr-12">
-    ArtSci (“artsy”) started in 2018 as an idea that science should be accessible to all. At a time
-    when our knowledge of the universe ranges from Higgs bosons to collisions of black holes, it is
-    important to find creative ways to communicate the magic of new discoveries.
-  </div>
-
-  <!-- Section 3 -->
-  <div class="mt-8 grid auto-rows-max gap-4 md:grid-cols-2 md:gap-12 lg:w-1/2 lg:pl-12 lg:ml-auto">
-    <div>
-      In pursuit of this, ArtSci celebrates the intersection of art and science through a two week
-      exhibition held at ETH Zurich every spring. This festival is open to everyone — all that is
-      needed is a piece (visual, auditory, multimedia, etc) that expresses science in an artistic
-      way. It’s really up to the scientists, artists, and the audience, to explore these boundaries
-      and we at ArtSci are excited to see what can be achieved in this chiasma of Art+Science.
-    </div>
     <div>
       <p>
         The first ArtSci exhibition: La Rencontre took place from 22nd April to 6th May 2018.The
@@ -112,6 +89,13 @@
         participants from different universities and regions of the world.
       </p>
     </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="text-2xl mt-8 lg:w-1/2 lg:mx-auto">
+    ArtSci (“artsy”) started in 2018 as an idea that science should be accessible to all. At a time
+    when our knowledge of the universe ranges from Higgs bosons to collisions of black holes, it is
+    important to find creative ways to communicate the magic of new discoveries.
   </div>
 
   <!-- Section: Get involved! -->
