@@ -44,13 +44,15 @@
         for you here at ETH.
       </div>
     </div>
-    <!-- TODO: add past submissions page -->
-    <!--    <div class="block__submissions">-->
-    <!--      <div class="block__submissions__arrow">-->
-    <!--        <ArrowRight />-->
-    <!--      </div>-->
-    <!--      <Button>Past Submissions</Button>-->
-    <!--    </div>-->
+
+    <div class="block__submissions">
+      <div class="block__submissions__arrow">
+        <ArrowRight />
+      </div>
+      <a href="/artsci_2019_program.png"><Button>Program</Button></a>
+      <!-- TODO: add past submissions page -->
+      <!-- <Button>Past Submissions</Button> -->
+    </div>
   </div>
 </div>
 
@@ -83,13 +85,14 @@
         partners at the Fine Art Collective and Boesner.
       </div>
     </div>
-    <!-- TODO: add past submissions page -->
-    <!--    <div class="block__submissions">-->
-    <!--      <div class="block__submissions__arrow">-->
-    <!--        <ArrowRight />-->
-    <!--      </div>-->
-    <!--      <Button>Past Submissions</Button>-->
-    <!--    </div>-->
+    <div class="block__submissions">
+      <div class="block__submissions__arrow">
+        <ArrowRight />
+      </div>
+      <a href="/artsci_2018_program.png"><Button>Program</Button></a>
+      <!-- TODO: add past submissions page -->
+      <!-- <Button>Past Submissions</Button> -->
+    </div>
   </div>
 </div>
 
