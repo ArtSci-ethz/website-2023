@@ -9,7 +9,7 @@
   style="background-image: url({backgroundImage});"
 >
   <img alt="ArtSci logo" src={logo} class="max-h-[50vh] pt-[20vh] px-16" />
-  <div class=" mt-16 mx-8">ArtSci Surfaces – Coming in 2023</div>
+  <div class=" mt-16 mx-8">ArtSci – Coming in 2023</div>
   <div class="mt-16 self-end mr-8 md:mr-[10vw]"><a href="/about">Enter</a></div>
 </div>
 
